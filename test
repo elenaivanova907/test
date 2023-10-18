@@ -22,3 +22,14 @@ int main(void)
 	}
 	return 0;
 }
+
+
+/usr/bin/ld: /tmp/cc5T5zFL.o: in function `main':
+test.cpp:(.text+0x8): undefined reference to `wiringPiSetup'
+/usr/bin/ld: test.cpp:(.text+0x58): undefined reference to `pinMode'
+/usr/bin/ld: test.cpp:(.text+0x64): undefined reference to `digitalWrite'
+/usr/bin/ld: test.cpp:(.text+0x6c): undefined reference to `delay'
+/usr/bin/ld: test.cpp:(.text+0x78): undefined reference to `digitalWrite'
+/usr/bin/ld: test.cpp:(.text+0x80): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+
