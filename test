@@ -24,12 +24,13 @@ int main(void)
 }
 
 
-/usr/bin/ld: /tmp/cc5T5zFL.o: in function `main':
-test.cpp:(.text+0x8): undefined reference to `wiringPiSetup'
-/usr/bin/ld: test.cpp:(.text+0x58): undefined reference to `pinMode'
-/usr/bin/ld: test.cpp:(.text+0x64): undefined reference to `digitalWrite'
-/usr/bin/ld: test.cpp:(.text+0x6c): undefined reference to `delay'
-/usr/bin/ld: test.cpp:(.text+0x78): undefined reference to `digitalWrite'
-/usr/bin/ld: test.cpp:(.text+0x80): undefined reference to `delay'
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/aarch64-linux-gnu/10/../../../../lib/libwiringPi.so when searching for -lwiringPi
+/usr/bin/ld: skipping incompatible /lib/../lib/libwiringPi.so when searching for -lwiringPi
+/usr/bin/ld: skipping incompatible /usr/lib/../lib/libwiringPi.so when searching for -lwiringPi
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/aarch64-linux-gnu/10/../../../libwiringPi.so when searching for -lwiringPi
+/usr/bin/ld: /usr/local/lib/libwiringPi.so: undefined reference to `pthread_create'
+/usr/bin/ld: /usr/local/lib/libwiringPi.so: undefined reference to `pthread_join'
+/usr/bin/ld: /usr/local/lib/libwiringPi.so: undefined reference to `pthread_cancel'
 collect2: error: ld returned 1 exit status
+
 
