@@ -100,4 +100,6 @@ export DISPLAY=:0
 		- add dtparam=i2c_vc=on to /boot/config.txt,then reboot 
 		- run i2cdetect -y 0 to check the devive's address.
 		- if it does not detect the device's address, please check the ribbon cable connection to ensure it is not reversed.
-		
+
+
+https://www.youtube.com/watch?v=AIM56Hc6ePk
